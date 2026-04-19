@@ -1,5 +1,6 @@
 const revealItems = document.querySelectorAll(".reveal");
 const navLinks = document.querySelectorAll(".nav a");
+const printButton = document.querySelector(".print-button");
 const sections = [...navLinks]
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
@@ -34,3 +35,7 @@ const navObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => navObserver.observe(section));
+
+printButton?.addEventListener("click", () => {
+  window.print();
+});
