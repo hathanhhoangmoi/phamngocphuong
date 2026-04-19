@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: pham-ngoc-phuong-cv
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
