@@ -165,9 +165,9 @@ img {
   max-height: 68svh;
   object-fit: contain;
   object-position: center bottom;
-  opacity: 0.98;
+  opacity: 1;
   filter: drop-shadow(0 28px 46px rgba(29, 29, 31, 0.18))
-    saturate(0.96) contrast(0.98);
+    saturate(1) contrast(1);
 }
 
 .intro-overlay {
@@ -175,8 +175,8 @@ img {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(246, 248, 251, 1) 0%, rgba(246, 248, 251, 0.92) 36%, rgba(246, 248, 251, 0.28) 74%),
-    linear-gradient(180deg, rgba(246, 248, 251, 0.3), rgba(246, 248, 251, 1));
+    linear-gradient(90deg, rgba(246, 248, 251, 0.98) 0%, rgba(246, 248, 251, 0.9) 32%, rgba(246, 248, 251, 0.12) 62%, rgba(246, 248, 251, 0) 82%),
+    linear-gradient(180deg, rgba(246, 248, 251, 0.08), rgba(246, 248, 251, 0.74));
 }
 
 .intro-content {
@@ -702,7 +702,7 @@ a.contact-link:hover {
   .intro-image {
     width: min(40vw, 320px);
     max-height: 54svh;
-    opacity: 0.72;
+    opacity: 0.94;
   }
 
   .metrics,
@@ -764,13 +764,13 @@ a.contact-link:hover {
     bottom: 26px;
     width: min(64vw, 300px);
     max-height: 46svh;
-    opacity: 0.34;
+    opacity: 0.72;
   }
 
   .intro-overlay {
     background:
-      linear-gradient(180deg, rgba(246, 248, 251, 0.38), rgba(246, 248, 251, 1) 58%),
-      linear-gradient(90deg, rgba(246, 248, 251, 0.94), rgba(246, 248, 251, 0.48));
+      linear-gradient(180deg, rgba(246, 248, 251, 0.16), rgba(246, 248, 251, 0.92) 64%),
+      linear-gradient(90deg, rgba(246, 248, 251, 0.86), rgba(246, 248, 251, 0.18));
   }
 
   h1 {
