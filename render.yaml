@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fanola-strategy-site
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
