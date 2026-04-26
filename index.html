@@ -644,6 +644,177 @@
                 </div>
               </section>
 
+              <section class="salary-planner">
+                <div class="diagram-head">
+                  <div>
+                    <p class="section-label">Lương dự kiến</p>
+                    <h3>Phần này có thể chỉnh trực tiếp trên web và sẽ tự lưu lại cho những lần mở sau.</h3>
+                  </div>
+                  <p>
+                    Mức lương đang để theo đơn vị VND mỗi tháng. Có thể đổi lại
+                    số lượng người và mức lương từng vị trí để ước tính payroll
+                    thực tế theo giai đoạn.
+                  </p>
+                </div>
+
+                <div class="salary-summary">
+                  <article class="tone-sky">
+                    <span>Tổng headcount</span>
+                    <strong id="salary-headcount">0</strong>
+                  </article>
+                  <article class="tone-mint">
+                    <span>Tổng lương / tháng</span>
+                    <strong id="salary-monthly-total">0 đ</strong>
+                  </article>
+                  <article class="tone-lavender">
+                    <span>Tổng lương / năm</span>
+                    <strong id="salary-yearly-total">0 đ</strong>
+                  </article>
+                </div>
+
+                <div class="salary-table" role="table" aria-label="Bảng lương dự kiến nhân sự">
+                  <div class="salary-table-head" role="row">
+                    <span>Vị trí</span>
+                    <span>Số lượng</span>
+                    <span>Lương / tháng</span>
+                    <span>Thành tiền</span>
+                  </div>
+
+                  <div class="salary-row tone-sky" role="row" data-salary-role="platform-manager">
+                    <div class="salary-role">
+                      <strong>Platform Manager</strong>
+                      <small>Quản lý gian hàng và ranking</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng Platform Manager" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="28000000" aria-label="Lương tháng Platform Manager" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-sky" role="row" data-salary-role="ecom-executive">
+                    <div class="salary-role">
+                      <strong>E-commerce Executive</strong>
+                      <small>Upload listing, tồn kho, flash sale</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="2" aria-label="Số lượng E-commerce Executive" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="15000000" aria-label="Lương tháng E-commerce Executive" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-lavender" role="row" data-salary-role="content-creator">
+                    <div class="salary-role">
+                      <strong>Content Creator / Designer</strong>
+                      <small>Ảnh, banner, video ngắn</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng Content Creator" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="18000000" aria-label="Lương tháng Content Creator" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-lavender" role="row" data-salary-role="koc-executive">
+                    <div class="salary-role">
+                      <strong>KOC Executive</strong>
+                      <small>Brief, gửi hàng và theo dõi collab</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng KOC Executive" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="15000000" aria-label="Lương tháng KOC Executive" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-mint" role="row" data-salary-role="performance-marketer">
+                    <div class="salary-role">
+                      <strong>Performance Marketer</strong>
+                      <small>ROAS, CPA và paid revenue</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng Performance Marketer" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="25000000" aria-label="Lương tháng Performance Marketer" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-mint" role="row" data-salary-role="paid-media-specialist">
+                    <div class="salary-role">
+                      <strong>Paid Media Specialist</strong>
+                      <small>Tách sâu theo kênh khi scale</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="0" aria-label="Số lượng Paid Media Specialist" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="20000000" aria-label="Lương tháng Paid Media Specialist" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-rose" role="row" data-salary-role="cs-lead">
+                    <div class="salary-role">
+                      <strong>CS Lead / Brand Protection</strong>
+                      <small>Khiếu nại, review, takedown</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng CS Lead" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="18000000" aria-label="Lương tháng CS Lead" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-rose" role="row" data-salary-role="cs-agent">
+                    <div class="salary-role">
+                      <strong>CS Agent</strong>
+                      <small>Chat, hoàn trả và tư vấn sản phẩm</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng CS Agent" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="10000000" aria-label="Lương tháng CS Agent" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+
+                  <div class="salary-row tone-butter" role="row" data-salary-role="data-analyst">
+                    <div class="salary-role">
+                      <strong>E-commerce Data Analyst</strong>
+                      <small>Dashboard, phân tích và dự báo</small>
+                    </div>
+                    <label class="salary-input-wrap">
+                      <input class="salary-qty" type="number" min="0" step="1" value="1" aria-label="Số lượng Data Analyst" />
+                    </label>
+                    <label class="salary-input-wrap">
+                      <input class="salary-amount" type="number" min="0" step="500000" value="22000000" aria-label="Lương tháng Data Analyst" />
+                    </label>
+                    <strong class="salary-subtotal">0 đ</strong>
+                  </div>
+                </div>
+
+                <div class="salary-actions">
+                  <button class="salary-reset-button" type="button" id="salary-reset">
+                    Khôi phục mức mặc định
+                  </button>
+                  <p>Dữ liệu được lưu ngay trên trình duyệt hiện tại.</p>
+                </div>
+              </section>
+
               <section class="team-grid">
                 <article class="team-card tone-sky">
                   <div class="team-meta">
