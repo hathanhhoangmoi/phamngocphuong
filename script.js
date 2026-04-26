@@ -9,6 +9,7 @@ window.addEventListener("load", () => {
 const targets = Array.from(document.querySelectorAll("[data-tab-target]"));
 const panels = Array.from(document.querySelectorAll(".tab-panel"));
 const tabShell = document.getElementById("content-tabs");
+const printButton = document.getElementById("print-report");
 
 function setActiveTab(tabName, options = {}) {
   const { updateHash = true, scrollIntoView = false } = options;
@@ -73,3 +74,9 @@ document.addEventListener("keydown", (event) => {
 const hash = window.location.hash.replace("#", "");
 const availableTabs = new Set(["overview", "strategy", "team"]);
 setActiveTab(availableTabs.has(hash) ? hash : "overview", { updateHash: false });
+
+if (printButton) {
+  printButton.addEventListener("click", () => {
+    window.print();
+  });
+}
